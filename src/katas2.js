@@ -9,7 +9,7 @@ console.assert(add(3, 5) === 8, 'A função add não está funcionando como espe
 // comece a criar a sua função multiply na linha abaixo
 function multiply(n3,n4){
     let result= 0
-    for(let i=0;i<=n4;n3++){
+    for(let i=0;i<=n3;i++){
         result= add(result,n4)
     }
     return result
