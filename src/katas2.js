@@ -9,8 +9,8 @@ console.assert(add(3, 5) === 8, 'A função add não está funcionando como espe
 // comece a criar a sua função multiply na linha abaixo
 function multiply(n3,n4){
     let result= 0
-    for(let i=0;i<=n3;i++){
-        result= add(result,n4)
+    for(let i=0;i<=n4;i++){
+        result= add(result,n3)
     }
     return result
 }
@@ -23,7 +23,7 @@ console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionand
 function power(n5,n6){
     let factor=1
     for(let i=1;i<=n6;i++){
-        factor=multiply(n5,factor)
+        factor= multiply(factor,n5)
     }
     return factor
 }
@@ -34,12 +34,9 @@ console.assert(power(3, 4) === 81, 'A função power não está funcionando como
 
 // comece a criar a sua função factorial na linha abaixo
 function factorial(number){
-    if(number===0){
-        return 1
-    }
     let indicator=1
-    for(number;number>=1;number--){
-        indicator=multiply(indicator,number)
+    for(let count=1;count<=number;count++){
+        indicator=multiply(indicator,count)
     }
     return indicator
 }
