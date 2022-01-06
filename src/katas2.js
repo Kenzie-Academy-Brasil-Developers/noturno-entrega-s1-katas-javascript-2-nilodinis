@@ -9,7 +9,7 @@ console.assert(add(3, 5) === 8, 'A função add não está funcionando como espe
 // comece a criar a sua função multiply na linha abaixo
 function multiply(n3,n4){
     let result= 0
-    for(let i=0;i<=n4;i++){
+    for(let i=0;i<n4;i++){// Problema de um loop a mais resolvido
         result= add(result,n3)
     }
     return result
@@ -67,4 +67,4 @@ function fibonacci(coeficient){
 }
 
 // descomente a linha seguinte para testar sua função
-console.assert(fibonacci(8) === 13, 'A função fibonacci não está funcionando como esperado');
+console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
